@@ -19,8 +19,8 @@ int main()
   cout << endl << fixed;
   for (int i = 0; i < 10; i++)
   {
-    x = 6. * rand() / RAND_MAX - R;
-    y = 6. * rand() / RAND_MAX - R;
+    x = rand() / RAND_MAX - R;
+    y = rand() / RAND_MAX - R;
     if ((y <= -sqrt(-x * x + 2 * x * R) + R && y >= 0 && x <= 0) ||
       (y >= sqrt(-x * x + 2 * x * R) + R && y <= 0 && x >= 0))
       cout << setw(8) << setprecision(4) << x << " "
